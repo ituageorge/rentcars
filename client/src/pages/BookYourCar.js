@@ -1,10 +1,11 @@
 import React from 'react'
+import DefaultLayout from '../components/DefaultLayout'
 
 function BookYourCar() {
     return(
-        <div>
+        <DefaultLayout>
             <h1>Booking Page</h1>
-        </div>
+        </DefaultLayout>
     )
 }
 
