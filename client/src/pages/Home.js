@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
+import { Button, Space, Row, Col } from 'antd';
 import { useSelector, useDispatch } from 'react-redux'
 import DefaultLayout from '../components/DefaultLayout'
 import { getAllCars } from '../redux/actions/carsActions'
 
-import { Button, Space, Row, Col } from 'antd';
 import Spinner from '../components/Spinner';
 
 // useSelector is for accessing the reducer data in the component
