@@ -24,9 +24,11 @@ function App() {
             />
           <Route path='/login' exact element={<Login/>} />
           <Route path='/register' exact element={<Register/>} />
-          <Route path='/bookyourcar' element={
+          <Route path='/booking/:carid' element={
             (localStorage.getItem('user')) ? (
-              <BookYourCar/>
+             
+                <BookYourCar />
+             
             ) : (      
               <Navigate replace to="/login" />
             ) } exact  />

@@ -25,6 +25,7 @@ function Login() {
           <Row gutter={16} className='d-flex align-items-center'>
                 <Col lg={16} style={{position:'relative'}}>
                     <img 
+                    alt='loginimage'
                     data-aos='slide-right'
                     data-aos-duration='1500'
                     src='https://images.unsplash.com/photo-1485291571150-772bcfc10da5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60' />

@@ -23,6 +23,7 @@ function Register() {
           <Row gutter={16} className='d-flex align-items-center'>
                 <Col lg={16} style={{position:'relative'}}>
                     <img 
+                    alt='imageforregiter'
                     data-aos='slide-right'
                     data-aos-duration='1500'
                     src='https://img.freepik.com/free-vector/red-sedan-car-isolated-white-vector_53876-64366.jpg?w=740&t=st=1670439611~exp=1670440211~hmac=f47db0d5996ac3591f0e7f6bc585cc8319af251e326a6eceb00c4e28957b4406' />

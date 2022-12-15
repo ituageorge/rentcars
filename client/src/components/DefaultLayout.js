@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserOutlined, SmileOutlined } from '@ant-design/icons';
+import { UserOutlined } from '@ant-design/icons';
 import { Dropdown, Row, Col , Button } from 'antd';
 
 
