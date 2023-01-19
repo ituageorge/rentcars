@@ -7,6 +7,10 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import BookYourCar from './pages/BookYourCar';
+import UserBookings from './pages/UserBookings';
+import AddCar from './pages/AddCar';
+import AdminHome from './pages/AdminHome';
+import EditCar from './pages/EditCar';
 
 
 function App() {
@@ -22,6 +26,35 @@ function App() {
             ) }
           exact
             />
+
+<Route path='/addcar' element={
+            (localStorage.getItem('user')) ? (
+              <AddCar />
+            ) : (
+              <Navigate replace to="/login" />
+            ) }
+          exact
+            />
+
+<Route path='/editcar/:carid' element={
+            (localStorage.getItem('user')) ? (
+              <EditCar />
+            ) : (
+              <Navigate replace to="/login" />
+            ) }
+          exact
+            />
+
+
+<Route path='/admin' element={
+            (localStorage.getItem('user')) ? (
+              <AdminHome />
+            ) : (
+              <Navigate replace to="/login" />
+            ) }
+          exact
+            />
+
           <Route path='/login' exact element={<Login/>} />
           <Route path='/register' exact element={<Register/>} />
           <Route path='/booking/:carid' element={
@@ -32,7 +65,18 @@ function App() {
             ) : (      
               <Navigate replace to="/login" />
             ) } exact  />
+
+
+            <Route path='/userbookings' element={
+              (localStorage.getItem('user')) ? (
+                <UserBookings />
+              ) : (
+                <Navigate replace to="/login" />
+              ) }
+            exact
+              />
 </Routes>
+
       </Router>
     </div>
   );

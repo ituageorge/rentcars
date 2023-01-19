@@ -1,17 +1,18 @@
 const initialData = {
-    loading : false
-}
+    bookings : []
+};
 
-export const alertsReducer = (state=initialData, action) => {
+
+export const bookingsReducer = (state=initialData, action) => {
     switch (action.type) {
-        case 'LOADING': {
+        case 'GET_ALL_BOOKINGS': {
             return{
                 ...state,
-                loading : action.payload
+                bookings : action.payload
             }
         }
             
-   
+    
         default: return state
            
     }

@@ -47,9 +47,9 @@ p{
   border: none;
 }
 
-button{
+/* button{
   /* padding: 3px 10px !important; */
-}
+/* } */ */
 
 .header{
   padding: 10px;
@@ -144,4 +144,13 @@ button{
 .login a{
   color: white;
   opacity: 0.5;
+}
+
+svg{
+  height: 20px !important;
+  width: 20px !important;
+}
+
+.anticon{
+  margin: 0.5rem;
 }
